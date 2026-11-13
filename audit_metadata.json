@@ -1,0 +1,85 @@
+{
+  "source_repo": "encode/django-rest-framework",
+  "source_url": "https://github.com/encode/django-rest-framework",
+  "audit_date": "2026-11-13T10:50:02.925365",
+  "scanner_version": "1.3.0",
+  "findings_count": 9,
+  "severity_breakdown": {
+    "HIGH": 6,
+    "CRITICAL": 3
+  },
+  "findings": [
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "tests/test_testing.py",
+      "line": 167
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "tests/test_testing.py",
+      "line": 177
+    },
+    {
+      "id": "PY-DESER-001",
+      "name": "Insecure deserialization",
+      "severity": "CRITICAL",
+      "cwe": "CWE-502",
+      "file": "tests/test_relations.py",
+      "line": 518
+    },
+    {
+      "id": "JS-XSS-001",
+      "name": "DOM XSS via innerHTML",
+      "severity": "HIGH",
+      "cwe": "CWE-79",
+      "file": "docs/theme/js/prettify-1.0.js",
+      "line": 25
+    },
+    {
+      "id": "PY-EVAL-001",
+      "name": "Code injection via eval/exec",
+      "severity": "CRITICAL",
+      "cwe": "CWE-95",
+      "file": "tests/test_fields.py",
+      "line": 119
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "tests/browsable_api/test_browsable_api.py",
+      "line": 41
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "tests/browsable_api/test_browsable_api.py",
+      "line": 82
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "tests/test_negotiation.py",
+      "line": 163
+    },
+    {
+      "id": "PY-DESER-001",
+      "name": "Insecure deserialization",
+      "severity": "CRITICAL",
+      "cwe": "CWE-502",
+      "file": "tests/test_serializer.py",
+      "line": 600
+    }
+  ]
+}
